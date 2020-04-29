@@ -1,0 +1,2 @@
+rootProject.name = 'pact-workshop'
+include 'whatido-cli', 'whatido-api'

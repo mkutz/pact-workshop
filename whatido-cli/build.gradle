@@ -1,0 +1,19 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'io.github.mkutz.pactworkshop'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform('org.codehaus.groovy:groovy-bom:3.0.2')
+    implementation 'info.picocli:picocli:4.2.0'
+    testImplementation 'org.spockframework:spock-core:2.0-M2-groovy-3.0'
+    testImplementation platform('org.testcontainers:testcontainers-bom:1.13.0')
+}
